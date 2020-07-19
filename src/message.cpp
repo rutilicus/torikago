@@ -1,8 +1,8 @@
 #include "../include/message.h"
 
 Message::Message(int time) : time(time), lastTime(0) {
-	std::random_device rnd;
-	mt = std::mt19937(rnd());
+    std::random_device rnd;
+    mt = std::mt19937(rnd());
 }
 
 int Message::getTime() { return time; }
@@ -15,5 +15,5 @@ void Message::addMessage(std::string message) { messages.push_back(message); }
 
 std::string Message::getMessage()
 {
-	return messages.at(mt() % messages.size());
+    return messages.at(mt() % messages.size());
 }

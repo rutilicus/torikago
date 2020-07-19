@@ -7,15 +7,15 @@
 class Message
 {
 public:
-	Message(int time);
-	int getTime();
-	int getLastTime();
-	void setLastTime(int lastTime);
-	void addMessage(std::string message);
-	std::string getMessage();
+    Message(int time);
+    int getTime();
+    int getLastTime();
+    void setLastTime(int lastTime);
+    void addMessage(std::string message);
+    std::string getMessage();
 private:
-	int time;
-	int lastTime;
-	std::mt19937 mt;
-	std::vector<std::string> messages;
+    int time;
+    int lastTime;
+    std::mt19937 mt;
+    std::vector<std::string> messages;
 };
