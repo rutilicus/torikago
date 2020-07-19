@@ -1,0 +1,11 @@
+{
+  "image": "img/sample.png",
+  "initRate": 1.0,
+  "bgColorR": 0,
+  "bgColorG": 0,
+  "bgColorB": 0,
+  "textColorR": 255,
+  "textColorG": 255,
+  "textColorB": 255,
+  "textDispTime": 15000
+}
