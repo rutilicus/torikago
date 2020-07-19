@@ -199,14 +199,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     int prevTextDrawHeight = 0;
     bool prevTextDraw = false;
 
-	// メインループ
-	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0)
-	{
+    // メインループ
+    while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0)
+    {
         // 現在時刻を取得
         int passTime = GetNowCount() - startTime;
 
-		// 画面をクリア
-		ClearDrawScreen();
+        // 画面をクリア
+        ClearDrawScreen();
 
         // マウス情報を取得
         int xTmp = 0;
@@ -388,9 +388,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
         initDraw = true;
 
-		// wait
-		Sleep(1000 / FPS);
-	}
+        // wait
+        Sleep(1000 / FPS);
+    }
 
     // DxLib終了処理
     DxLib_End();
